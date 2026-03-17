@@ -4,10 +4,13 @@
     <h3>{{ title }}</h3>
   </div>
 
+  @if (!finished) {
   <div class="quizz_questions">
     <h3>{{ questionSelected.question }}</h3>
   </div>
+  }
 
+  @if (!finished) {
   <div class="quizz_options">
     @for (option of questionSelected.options; track $index) {
     <button class="btn-option" (click)="playerChoose(option.alias)">
@@ -15,11 +18,12 @@
     </button>
     }
   </div>
+  }
 
   @if (finished) {
   <div class="quizz_results">
     <h1>O Seu resultado é:</h1>
-    <p>Resposta Selecionada</p>
+    <p>{{ answerSelected }}</p>
   </div>
   }
 </div>

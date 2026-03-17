@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border:1px solid #4224d9;
+  border: 1px solid #4224d9;
   border-radius: 8px;
   background-color: #644ED2;
   width: 100%;
@@ -28,6 +28,9 @@
   font-size: 20px;
   font-family: 'Segoe UI', sans-serif;
   margin-bottom: 20px;
+  padding: 20px;
+
+  text-align: center;
 }
 
 .quizz_options {
@@ -36,15 +39,13 @@
   justify-content: center;
   margin: auto;
   margin-bottom: 20px;
-
-  gap: 10px;
 }
 
 .btn-option {
   background-color: transparent;
   border-radius: 8px;
   border: 1px solid #18ab29;
-  width: 48%;
+  width: 50%;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
